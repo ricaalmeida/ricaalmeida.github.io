@@ -33,19 +33,19 @@
     <a href="#artigos">Artigos Completos</a>
   </nav>
 
-  <section id="pecas">
-    <h2>Peças Processuais do Direito Tributário cobradas pela FGV</h2>
-    <ul>
-      <li><strong>Mandado de Segurança</strong> - Art. 5º, LXIX da CF/88; Lei 12.016/2009</li>
-      <li><strong>Ação Anulatória de Débito Fiscal</strong> - Art. 38 e seguintes do CTN</li>
-      <li><strong>Embargos à Execução Fiscal</strong> - Art. 16 da LEF (Lei 6.830/1980)</li>
-      <li><strong>Recurso de Apelação</strong> - Art. 1.009 e seguintes do CPC/2015</li>
-      <li><strong>Agravo de Instrumento</strong> - Art. 1.015 do CPC/2015</li>
-      <li><strong>Exceção de Pré-Executividade</strong> - Construção doutrinária e jurisprudencial</li>
-      <li><strong>Ação Declaratória</strong> - Art. 19 do CPC/2015</li>
-      <li><strong>Ação de Consignação em Pagamento</strong> - Art. 539 e seguintes do CPC/2015</li>
-    </ul>
-  </section>
+<section id="pecas">
+  <h2>Peças Processuais do Direito Tributário cobradas pela FGV</h2>
+  <ul>
+    <li class="artigo" onclick="abrirModal('modalMS')"><strong>Mandado de Segurança</strong> - Clique para ver detalhes.</li>
+    <li class="artigo" onclick="abrirModal('modalAnulatoria')"><strong>Ação Anulatória de Débito Fiscal</strong> - Clique para ver detalhes.</li>
+    <li class="artigo" onclick="abrirModal('modalEmbargos')"><strong>Embargos à Execução Fiscal</strong> - Clique para ver detalhes.</li>
+    <li class="artigo" onclick="abrirModal('modalApelacao')"><strong>Recurso de Apelação</strong> - Clique para ver detalhes.</li>
+    <li class="artigo" onclick="abrirModal('modalAgravo')"><strong>Agravo de Instrumento</strong> - Clique para ver detalhes.</li>
+    <li class="artigo" onclick="abrirModal('modalExcecao')"><strong>Exceção de Pré-Executividade</strong> - Clique para ver detalhes.</li>
+    <li class="artigo" onclick="abrirModal('modalDeclaratoria')"><strong>Ação Declaratória</strong> - Clique para ver detalhes.</li>
+    <li class="artigo" onclick="abrirModal('modalConsignacao')"><strong>Ação de Consignação em Pagamento</strong> - Clique para ver detalhes.</li>
+  </ul>
+</section>
 
   <section id="fundamentos">
     <h2>Fundamentos Legais por Código</h2>
@@ -81,6 +81,54 @@
   <div id="modal3" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modal3')">&times;</span><h3>Art. 151, IV do CTN</h3><p>Suspendem a exigibilidade do crédito tributário: o mandado de segurança.</p></div></div>
   <div id="modal4" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modal4')">&times;</span><h3>Art. 319 do CPC</h3><p>A petição inicial indicará: o juízo, os nomes e prenomes, o fato e os fundamentos jurídicos do pedido, o pedido, o valor da causa, as provas e a opção por audiência de conciliação.</p></div></div>
 
+<div id="modalMS" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalMS')">&times;</span><h3>Mandado de Segurança</h3>
+<p><strong>Finalidade:</strong> Proteger direito líquido e certo, não amparado por habeas corpus ou habeas data.</p>
+<p><strong>Cabimento:</strong> Quando há ilegalidade ou abuso de poder por autoridade pública.</p>
+<p><strong>Fundamentos:</strong> CF/88, art. 5º, LXIX; Lei 12.016/09; CTN, art. 151, IV.</p>
+<p><strong>Vinculação ao CPC:</strong> Art. 319 (Petição Inicial).</p>
+<p><strong>Súmulas:</strong> STF 266, 267, 268, 271, 273, 512.</p></div></div>
+
+<div id="modalAnulatoria" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalAnulatoria')">&times;</span><h3>Ação Anulatória de Débito Fiscal</h3>
+<p><strong>Finalidade:</strong> Anular lançamento tributário e evitar a cobrança indevida.</p>
+<p><strong>Fundamentos:</strong> CTN, arts. 38 e 142; CF/88, art. 150, I e II.</p>
+<p><strong>Características:</strong> Pode ter pedido liminar. Obrigação de prova do vício do lançamento.</p>
+<p><strong>Súmulas:</strong> STJ 393, STF 346 e 473.</p></div></div>
+
+<div id="modalEmbargos" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalEmbargos')">&times;</span><h3>Embargos à Execução Fiscal</h3>
+<p><strong>Finalidade:</strong> Impugnar a execução fiscal já proposta.</p>
+<p><strong>Fundamentos:</strong> Lei 6.830/80, art. 16; CPC, arts. 914 e seguintes.</p>
+<p><strong>Requisitos:</strong> Garantia do juízo, petição própria, impugnação aos termos da CDA.</p>
+<p><strong>Súmulas:</strong> STF 393, STJ 112, 392.</p></div></div>
+
+<div id="modalApelacao" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalApelacao')">&times;</span><h3>Recurso de Apelação</h3>
+<p><strong>Finalidade:</strong> Levar à instância superior a revisão de sentença.</p>
+<p><strong>Fundamentos:</strong> CPC, arts. 1.009 a 1.014; CF/88, art. 5º, XXXV.</p>
+<p><strong>Características:</strong> Suspende os efeitos da sentença (regra); devolutivo e, em alguns casos, suspensivo.</p>
+<p><strong>Súmulas:</strong> STJ 7, 211.</p></div></div>
+
+<div id="modalAgravo" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalAgravo')">&times;</span><h3>Agravo de Instrumento</h3>
+<p><strong>Finalidade:</strong> Recorrer de decisões interlocutórias relevantes.</p>
+<p><strong>Fundamentos:</strong> CPC, art. 1.015 e incisos.</p>
+<p><strong>Casos comuns:</strong> Tutelas provisórias, competência, impedimento/suspeição.</p>
+<p><strong>Súmulas:</strong> STJ 182.</p></div></div>
+
+<div id="modalExcecao" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalExcecao')">&times;</span><h3>Exceção de Pré-Executividade</h3>
+<p><strong>Finalidade:</strong> Alegar matérias de ordem pública sem garantir o juízo.</p>
+<p><strong>Natureza:</strong> Defesa autônoma incidental. Sem previsão expressa, mas aceita pela jurisprudência.</p>
+<p><strong>Hipóteses:</strong> Ilegalidade da CDA, prescrição, decadência, ilegitimidade.</p>
+<p><strong>Súmulas:</strong> STJ 393.</p></div></div>
+
+<div id="modalDeclaratoria" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalDeclaratoria')">&times;</span><h3>Ação Declaratória</h3>
+<p><strong>Finalidade:</strong> Reconhecer a existência ou inexistência de relação jurídica.</p>
+<p><strong>Fundamentos:</strong> CPC, art. 19; CF/88, art. 5º, XXXV.</p>
+<p><strong>Aplicação tributária:</strong> Declarar inexistência de obrigação tributária ou legalidade de conduta.</p></div></div>
+
+<div id="modalConsignacao" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalConsignacao')">&times;</span><h3>Ação de Consignação em Pagamento</h3>
+<p><strong>Finalidade:</strong> Efetuar o pagamento de tributo cujo credor se recusa a receber ou gera dúvida sobre quem deve recebê-lo.</p>
+<p><strong>Fundamentos:</strong> CPC, arts. 539 a 546; CF/88, art. 5º, XXXV; CTN, art. 164.</p>
+<p><strong>Hipóteses:</strong> Recusa do recebimento, dúvida sobre o credor, exigência de quitação de valor superior.</p></div></div>
+
+  
   <footer>
     <p>&copy; 2025 - Site de apoio para a 2ª Fase OAB - Direito Tributário</p>
   </footer>
