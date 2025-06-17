@@ -39,6 +39,14 @@
     </ul>
   </section>
 
+    <section id="peticoes">
+    <h2>2. Respostas do Réu </h2>
+    <ul>
+      <li class="artigo" onclick="abrirModal('contestacao')">Contestação</li>
+      <li class="artigo" onclick="abrirModal('excecaoPE')">Exceção de Pré-Executividade (EPE)</li>
+    </ul>
+  </section>
+
  <!-- Modal detalhado com modelo para Ação Anulatória -->
 <div id="acaoAnulatoria" class="modal">
   <div class="modal-content">
@@ -350,7 +358,245 @@
   </div>
 </div>
 
+  <div id="embargosExecFiscal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('embargosExecFiscal')">&times;</span>
+    <h3>Embargos à Execução Fiscal – Modelo Completo</h3>
 
+    <p><strong>Finalidade:</strong> Permitir a defesa do executado (contribuinte) contra a cobrança judicial de crédito tributário pela Fazenda Pública, questionando legalidade, validade da CDA, prescrição, entre outros vícios.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>NATUREZA DE AÇÃO AUTÔNOMA DE DEFESA:</strong> Embargos constituem ação incidente aos autos da execução.<br><em>Lei 6.830/80, art. 16:</em> Embargos oferecidos em processo apartado, porém apensado.</li>
+      <li><strong>EXIGÊNCIA DE GARANTIA DO JUÍZO:</strong> Necessário depósito, penhora ou fiança bancária para admissibilidade.<br><em>Lei 6.830/80, art. 16, §1º:</em> Embargos só são recebidos se a execução estiver garantida.</li>
+      <li><strong>PRAZO DE 30 DIAS:</strong> Contados da intimação da penhora ou depósito.<br><em>Lei 6.830/80, art. 16, III:</em> Prazo peremptório para oposição.</li>
+      <li><strong>POSSIBILIDADE DE ALEGAÇÃO DE MATÉRIA AMPLA:</strong> Pode discutir nulidade da CDA, prescrição, pagamento, compensação, decadência, entre outros.<br><em>STJ, Súmula 393:</em> Matéria de ordem pública pode ser reconhecida de ofício.</li>
+      <li><strong>SUSPENSÃO LIMITADA DOS ATOS EXECUTÓRIOS:</strong> Embargos não suspendem execução, salvo concessão de efeito suspensivo.<br><em>Lei 6.830/80, art. 16, §2º:</em> Suspensão condicionada a garantia idônea e despacho judicial.</li>
+    </ul>
+
+    <h4>Estrutura da Petição e Fundamentos Legais:</h4>
+    <ol>
+      <li><strong>Endereçamento:</strong> Excelentíssimo Senhor Doutor Juiz Federal da ___ Vara (Processo de Execução Fiscal nº ___).</li>
+      <li><strong>Qualificação das Partes (CPC, art. 319):</strong> Executado (embargante) e Fazenda Pública (embargada).</li>
+      <li><strong>Dos Fatos:</strong> Descrição da execução fiscal, garantia oferecida, vícios apontados.</li>
+      <li><strong>Do Direito:</strong>
+        <ul>
+          <li><strong>Lei 6.830/80, art. 16:</strong> Cabimento, prazo e requisitos dos embargos.</li>
+          <li><strong>CTN, arts. 174 e 156:</strong> Prescrição e extinção do crédito tributário.</li>
+          <li><strong>CPC, arts. 914‑920:</strong> Regras gerais dos embargos à execução.</li>
+        </ul>
+      </li>
+      <li><strong>Dos Pedidos (com fundamentos):</strong>
+        <ul>
+          <li>Reconhecer a nulidade da CDA ou do título – <em>Lei 6.830/80, art. 2º, §5º</em>.</li>
+          <li>Declarar prescrita a pretensão executória – <em>CTN, art. 174</em>.</li>
+          <li>Extinguir a execução fiscal, liberando garantias – <em>art. 924, I, CPC</em>.</li>
+          <li>Condenar a Fazenda em honorários – <em>arts. 82‑85, CPC</em>.</li>
+        </ul>
+      </li>
+      <li><strong>Das Provas:</strong> Juntada de prova documental (CDA, comprovantes de pagamento, laudos contábeis) e requerimento de prova pericial, se necessário.</li>
+      <li><strong>Fechamento:</strong> Termos em que pede deferimento. [Cidade], [Data]. Assinatura e OAB.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul>
+      <li><strong>Súmula 409, STF:</strong> Inadmissível execução fiscal fundada em CDA nula.</li>
+      <li><strong>Súmula 393, STJ:</strong> Matéria de ordem pública pode ser reconhecida ex officio nos embargos.</li>
+      <li><strong>Súmula 314, STJ:</strong> Em embargos à execução fiscal, é possível alegar nulidade da CDA sem garantia do valor quando questão de ordem pública.</li>
+    </ul>
+  </div>
+</div>
+
+
+<div id="execucaoFiscal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('execucaoFiscal')">&times;</span>
+    <h3>Ação de Execução Fiscal – Modelo Completo</h3>
+
+    <p><strong>Finalidade:</strong> Permitir que a Fazenda Pública cobre judicialmente crédito tributário inscrito em Dívida Ativa, mediante título executivo extrajudicial (CDA).</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>TÍTULO EXECUTIVO EXTRAJUDICIAL:</strong> Fundada em Certidão de Dívida Ativa regular.<br><em>Lei 6.830/80, art. 2º e §5º:</em> CDA faz prova de certeza e liquidez se atender requisitos legais.</li>
+      <li><strong>COBERTURA DE CRÉDITOS TRIBUTÁRIOS E NÃO‑TRIBUTÁRIOS:</strong> Pode abranger taxas, multas e outros débitos inscritos.<br><em>Lei 6.830/80, art. 2º:</em> Conceito amplo de Dívida Ativa.</li>
+      <li><strong>PRESCRIÇÃO QUINQUENAL INTERRUPTA COM DESPACHO POSITIVO:</strong> Ajuizamento interrompe a prescrição.<br><em>CTN, art. 174, par. único, I:</em> Prescrição se interrompe pelo despacho que ordena citação.</li>
+      <li><strong>PENHORA ‘ONLINE’ E MEDIDAS COERCITIVAS:</strong> Fazenda pode requerer BacenJud, Renajud, etc.<br><em>Lei 6.830/80, art. 10; CPC, art. 835:</em> Ordem de penhora.</li>
+      <li><strong>HONORÁRIOS FIXADOS EM 10% SOBRE O TOTAL EXECUTADO:</strong> Caso de pagamento integral.<br><em>Lei 6.830/80, art. 1º, §1º:</em> Mínimo de 10% de honorários na extinção.</li>
+    </ul>
+
+    <h4>Estrutura da Petição Inicial e Fundamentos Legais:</h4>
+    <ol>
+      <li><strong>Endereçamento:</strong> Excelentíssimo Senhor Doutor Juiz Federal da ___ Vara da Seção Judiciária de [Cidade] (ou Juízo Estadual com competência delegada).</li>
+      <li><strong>Qualificação da Fazenda Pública (Lei 6.830/80, art. 1º):</strong> Autora com CNPJ e endereço; Réu (executado) qualificado.</li>
+      <li><strong>Da CDA:</strong> Juntar via digital, contendo número, origem do débito, fundamento legal e valor atualizado.</li>
+      <li><strong>Do Direito:</strong>
+        <ul>
+          <li><strong>Lei 6.830/80, arts. 1º‑8º:</strong> Regramento da execução fiscal.</li>
+          <li><strong>CTN, art. 174:</strong> Prazo prescricional e sua interrupção.</li>
+          <li><strong>CPC, arts. 824‑829:</strong> Aplicação subsidiária do processo de execução.</li>
+        </ul>
+      </li>
+      <li><strong>Dos Pedidos (com fundamentos):</strong>
+        <ul>
+          <li>Citação do executado para pagamento em 5 dias – <em>Lei 6.830/80, art. 8º</em>.</li>
+          <li>Penhora de bens suficientes caso não haja pagamento – <em>CPC, art. 835</em>.</li>
+          <li>Intimação para opor embargos em 30 dias após garantia – <em>Lei 6.830/80, art. 16</em>.</li>
+          <li>Condenação em honorários de 10% – <em>Lei 6.830/80, art. 1º, §1º</em>.</li>
+        </ul>
+      </li>
+      <li><strong>Das Provas:</strong> Juntada da CDA, demonstrativos de atualização, eventuais notificações administrativas.</li>
+      <li><strong>Fechamento:</strong> Termos em que pede deferimento. [Cidade], [Data]. Assinatura e órgão da Procuradoria.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul>
+      <li><strong>Súmula 392, STJ:</strong> A Fazenda Pública pode substituir a CDA até a decisão de primeira instância.</li>
+      <li><strong>Súmula 475, STF:</strong> Prescrição intercorrente se aplica às execuções fiscais.</li>
+      <li><strong>Súmula 409, STF:</strong> CDA nula inviabiliza execução fiscal.</li>
+    </ul>
+  </div>
+</div>
+
+
+  <div id="acaoCautelarFiscal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('acaoCautelarFiscal')">&times;</span>
+    <h3>Ação Cautelar Fiscal – Modelo Completo</h3>
+
+    <p><strong>Finalidade:</strong> Assegurar a futura eficácia da Execução Fiscal, decretando a indisponibilidade de bens do devedor quando houver risco de dilapidação patrimonial que possa frustrar a cobrança do crédito tributário.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>NATUREZA CAUTELAR PREPARATÓRIA OU INCIDENTAL:</strong> Voltada à tutela do resultado útil do processo executivo fiscal.<br><em>Lei 8.397/92, art. 1º:</em> Admissível antes ou no curso da execução fiscal.</li>
+      <li><strong>REQUISITOS DE FUMUS BONI IURIS E PERICULUM IN MORA:</strong> Demonstrar a existência de crédito constituído e risco de dilapidação ou alienação de bens.<br><em>Lei 8.397/92, art. 2º:</em> Indícios de alienação ou esvaziamento patrimonial.</li>
+      <li><strong>MEDIDA DE INDISPONIBILIDADE DE BENS:</strong> Pode abranger ativos financeiros, quotas societárias, imóveis e veículos.<br><em>Lei 8.397/92, art. 4º:</em> Juiz ordena registro nos órgãos competentes.</li>
+      <li><strong>VIGÊNCIA DA CAUTELAR ATÉ GARANTIA OU PAGAMENTO:</strong> Levanta-se a indisponibilidade com a garantia integral ou extinção do crédito.<br><em>Lei 8.397/92, art. 7º:</em> Cautelar cessa com garantia idônea.</li>
+      <li><strong>TUTELA ANTECIPADA PASSÍVEL DE AGRAVO:</strong> Decisão que decreta indisponibilidade é recorrível por Agravo de Instrumento.<br><em>CPC, art. 1.015, parágrafo único:</em> Cabimento de agravo nas tutelas provisórias.</li>
+    </ul>
+
+    <h4>Estrutura da Petição Inicial e Fundamentos Legais:</h4>
+    <ol>
+      <li><strong>Endereçamento:</strong> Excelentíssimo Senhor Doutor Juiz Federal da ___ Vara da Seção Judiciária de [Cidade].</li>
+      <li><strong>Qualificação das Partes:</strong> Fazenda Pública (autora) e Devedor (réu), com endereços completos.</li>
+      <li><strong>Dos Fatos:</strong> Narrativa do crédito tributário já constituído e indícios de que o devedor está alienando bens para frustrar a futura execução.</li>
+      <li><strong>Do Direito:</strong>
+        <ul>
+          <li><strong>Lei 8.397/92, arts. 1º-7º:</strong> Requisitos, cabimento e alcance da cautelar fiscal.</li>
+          <li><strong>CTN, art. 185-A:</strong> Fraude à execução em alienações após inscrição em dívida ativa.</li>
+          <li><strong>CPC, arts. 300, 301 e 1.015:</strong> Tutela provisória e cabimento de agravo.</li>
+        </ul>
+      </li>
+      <li><strong>Dos Pedidos (com fundamentos):</strong>
+        <ul>
+          <li>Decretar a indisponibilidade de bens do réu – <em>art. 4º, Lei 8.397/92</em>.</li>
+          <li>Oficiar a registros de imóveis, Detran, BacenJud e demais órgãos – <em>art. 4º, §2º, Lei 8.397/92</em>.</li>
+          <li>Fixar multa por descumprimento – <em>CPC, art. 297</em>.</li>
+          <li>Citação para contestar em 5 dias – <em>art. 2º, §2º, Lei 8.397/92</em>.</li>
+          <li>Condenação em honorários – <em>arts. 82-85, CPC</em>.</li>
+        </ul>
+      </li>
+      <li><strong>Das Provas:</strong> Juntada de CDA, relatórios financeiros, transferências suspeitas, certidões de imóveis, extratos bancários, etc.</li>
+      <li><strong>Fechamento:</strong> Termos em que pede deferimento. [Cidade], [Data]. Assinatura e OAB.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul>
+      <li><strong>Súmula 323, STJ:</strong> O arresto cautelar dispensa garantia do juízo se comprovado risco de dilapidação.</li>
+      <li><strong>Súmula 406, STJ:</strong> É legítima a indisponibilidade de bens mesmo sem prévia citação se presentes os requisitos do art. 2º, Lei 8.397/92.</li>
+    </ul>
+  </div>
+</div>
+
+
+  <div id="contestacao" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('contestacao')">&times;</span>
+    <h3>Contestação – Modelo Completo</h3>
+
+    <p><strong>Finalidade:</strong> Permitir ao réu (Fazenda Pública ou contribuinte) apresentar defesa de mérito, preliminares e provas contra a ação ajuizada.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Peça de defesa obrigatória:</strong> Ausência gera revelia, embora Fazenda não sofra efeitos.<br><em>CPC, art. 335:</em> Prazo para contestar.</li>
+      <li><strong>Possibilidade de preliminares e mérito:</strong> Alegar incompetência, prescrição, decadência, vícios formais etc.<br><em>CPC, arts. 337‑338:</em> Matérias preliminares.</li>
+      <li><strong>Ônus da prova do réu sobre fatos impeditivos:</strong> Deve comprovar exceções e extinções.<br><em>CPC, art. 373, II</em></li>
+      <li><strong>Prazo em dobro para Fazenda Pública:</strong> Defesa no dobro do prazo comum.<br><em>CPC, art. 183</em></li>
+      <li><strong>Efeito de estabilizar pontos não impugnados:</strong> Revelia parcial nos fatos não contestados.<br><em>CPC, art. 341</em></li>
+    </ul>
+
+    <h4>Estrutura da Contestação e Fundamentos Legais:</h4>
+    <ol>
+      <li><strong>Endereçamento:</strong> Juízo onde tramita a ação.</li>
+      <li><strong>Qualificação das Partes:</strong> Identificação do réu.</li>
+      <li><strong>Preliminares (art. 337, CPC):</strong> Incompetência, litispendência, coisa julgada, prescrição/decadência.</li>
+      <li><strong>Do Mérito:</strong> Impugnação específica dos fatos e fundamentos do autor.</li>
+      <li><strong>Dos Pedidos (com fundamentos):</strong>
+        <ul>
+          <li>Rejeitar preliminarmente a ação – <em>art. 330, §1º, CPC</em></li>
+          <li>Julgar improcedente o pedido – <em>arts. 487, I e CPC</em></li>
+          <li>Condenar autor em custas e honorários – <em>arts. 82‑85, CPC</em></li>
+        </ul>
+      </li>
+      <li><strong>Das Provas:</strong> Documentos, perícias, testemunhas.</li>
+      <li><strong>Fechamento:</strong> Termos em que pede deferimento. [Cidade], [Data]. Assinatura e OAB.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul>
+      <li><strong>Súmula 343, STF:</strong> Não cabe contestar com base em interpretação controvertida de lei.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal detalhado com modelo para Exceção de Pré‑Executividade (EPE) -->
+<div id="excecaoPE" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('excecaoPE')">&times;</span>
+    <h3>Exceção de Pré‑Executividade – Modelo Completo</h3>
+
+    <p><strong>Finalidade:</strong> Permitir ao executado alegar matérias de ordem pública (nulidade da CDA, prescrição, ilegitimidade) sem garantir o juízo, em execução fiscal.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Instrumento simples e incidental:</strong> Petição nos autos da execução.<br><em>Súmula 393, STJ:</em> Matéria de ordem pública pode ser conhecida de ofício.</li>
+      <li><strong>Dispensa garantia do juízo:</strong> Não há exigência de penhora ou depósito.<br><em>Jurisprudência pacífica do STJ</em></li>
+      <li><strong>Matérias cabíveis restritas:</strong> Erros formais na CDA, prescrição, nulidade absoluta.<br><em>STJ, AgRg no REsp 1.349.175</em></li>
+      <li><strong>Possibilidade de prova exclusivamente documental:</strong> Não admite dilação probatória ampla.<br><em>REsp 1.110.925 RS</em></li>
+      <li><strong>Interposição a qualquer tempo:</strong> Antes da penhora ou após, enquanto não houver trânsito em julgado.<br><em>STJ, AgRg no Ag 1.225.891</em></li>
+    </ul>
+
+    <h4>Estrutura da Petição e Fundamentos Legais:</h4>
+    <ol>
+      <li><strong>Endereçamento:</strong> Juízo da execução fiscal.</li>
+      <li><strong>Qualificação:</strong> Executado.</li>
+      <li><strong>Dos Fatos:</strong> Breve relato do andamento e fundamento da nulidade.</li>
+      <li><strong>Do Direito:</strong>
+        <ul>
+          <li><strong>Súmula 393, STJ:</strong> Admite EPE para questões de ordem pública sem garantia.</li>
+          <li><strong>CTN, art. 174:</strong> Prescrição.</li>
+          <li><strong>Lei 6.830/80, art. 2º, §5º:</strong> Requisitos da CDA.</li>
+        </ul>
+      </li>
+      <li><strong>Dos Pedidos:</strong>
+        <ul>
+          <li>Reconhecer nulidade/prescrição – <em>Súmula 393, STJ; art. 174, CTN</em></li>
+          <li>Extinguir execução fiscal – <em>art. 924, I, CPC</em></li>
+          <li>Custas e honorários – <em>arts. 82‑85, CPC</em></li>
+        </ul>
+      </li>
+      <li><strong>Das Provas:</strong> Documentos preexistentes (CDA, certidões).</li>
+      <li><strong>Fechamento:</strong> Termos em que pede deferimento. [Cidade], [Data]. Assinatura e OAB.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul>
+      <li><strong>Súmula 393, STJ:</strong> Matéria de ordem pública pode ser reconhecida a qualquer tempo na execução.</li>
+      <li><strong>Súmula 409, STF:</strong> CDA nula impede execução.</li>
+    </ul>
+  </div>
+</div>
+
+  
   <footer>
     <p>&copy; 2025 - Site de apoio para a 2ª Fase OAB - Direito Tributário</p>
   </footer>
