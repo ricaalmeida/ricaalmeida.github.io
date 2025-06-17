@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -6,290 +5,95 @@
   <title>Direito Tributário - 2ª Fase OAB</title>
   <style>
     body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 0; }
-    header { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
+    header, footer { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
     nav { background: #34495e; padding: 10px; text-align: center; }
     nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
     section { padding: 20px; background: white; margin: 20px; border-radius: 8px; }
-    footer { text-align: center; padding: 20px; background: #2c3e50; color: white; }
-    h2 { color: #2c3e50; }
-    ul { margin-left: 20px; }
+    h2, h3, h4 { color: #2c3e50; }
     .artigo { background: #ecf0f1; border-left: 5px solid #2980b9; margin: 10px 0; padding: 10px; border-radius: 5px; cursor: pointer; }
-    .artigo strong { color: #2980b9; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: center;}
-    .modal-content {
-  max-height: 80vh; /* limita a altura do modal a 80% da altura da viewport */
-  overflow-y: auto; /* adiciona scroll vertical se necessário */
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-      max-width: 1000px;
-  position: relative;
-}
+    .modal-content { max-height: 80vh; overflow-y: auto; padding: 20px; background-color: #fff; border-radius: 5px; max-width: 1000px; position: relative; }
     .close { float: right; font-size: 24px; cursor: pointer; }
   </style>
 </head>
 <body>
   <header>
     <h1>Direito Tributário para a 2ª Fase da OAB</h1>
-    <p>Conectando o CTN, o CPC e o Vade Mecum com foco no Exame da OAB (FGV)</p>
   </header>
 
   <nav>
-    <a href="#pecas">Peças Processuais</a>
-    <a href="#fundamentos">Fundamentos Legais</a>
-    <a href="#relacoes">Relações entre os Códigos</a>
-    <a href="#artigos">Artigos Completos</a>
+    <a href="#peticoes">Petições Iniciais</a>
   </nav>
 
-<section id="pecas">
-  <h2>Peças Processuais do Direito Tributário cobradas pela FGV</h2>
-  <ul>
-    <li class="artigo" onclick="abrirModal('modalMS')"><strong>Mandado de Segurança</strong> - Clique para ver detalhes.</li>
-    <li class="artigo" onclick="abrirModal('modalAnulatoria')"><strong>Ação Anulatória de Débito Fiscal</strong> - Clique para ver detalhes.</li>
-    <li class="artigo" onclick="abrirModal('modalEmbargos')"><strong>Embargos à Execução Fiscal</strong> - Clique para ver detalhes.</li>
-    <li class="artigo" onclick="abrirModal('modalApelacao')"><strong>Recurso de Apelação</strong> - Clique para ver detalhes.</li>
-    <li class="artigo" onclick="abrirModal('modalAgravo')"><strong>Agravo de Instrumento</strong> - Clique para ver detalhes.</li>
-    <li class="artigo" onclick="abrirModal('modalExcecao')"><strong>Exceção de Pré-Executividade</strong> - Clique para ver detalhes.</li>
-    <li class="artigo" onclick="abrirModal('modalDeclaratoria')"><strong>Ação Declaratória</strong> - Clique para ver detalhes.</li>
-    <li class="artigo" onclick="abrirModal('modalConsignacao')"><strong>Ação de Consignação em Pagamento</strong> - Clique para ver detalhes.</li>
-  </ul>
-</section>
-
-  <section id="fundamentos">
-    <h2>Fundamentos Legais por Código</h2>
+  <section id="peticoes">
+    <h2>1. Petições Iniciais</h2>
     <ul>
-      <li><strong>CTN (Lei 5.172/66)</strong>: Artigos 113 a 156 (Obrigação, Crédito e Extinção Tributária)</li>
-      <li><strong>CPC (Lei 13.105/2015)</strong>: Parte Geral (Arts. 1º a 15), Processo de Conhecimento, Execução, Recursos</li>
-      <li><strong>CF/88 - Título VI</strong>: Arts. 145 a 162 - Sistema Tributário Nacional</li>
-      <li><strong>Lei 12.016/09</strong>: Mandado de Segurança individual e coletivo</li>
-      <li><strong>Lei 6.830/80 (LEF)</strong>: Execução Fiscal</li>
+      <li class="artigo" onclick="abrirModal('acaoAnulatoria')">Ação Anulatória</li>
+      <li class="artigo" onclick="abrirModal('acaoDeclaratoria')">Ação Declaratória</li>
+      <li class="artigo" onclick="abrirModal('repeticaoIndebito')">Ação de Repetição de Indébito</li>
+      <li class="artigo" onclick="abrirModal('acaoConsignatoria')">Ação Consignatória</li>
+      <li class="artigo" onclick="abrirModal('mandadoSeguranca')">Mandado de Segurança</li>
+      <li class="artigo" onclick="abrirModal('embargosExecFiscal')">Embargos à Execução Fiscal</li>
+      <li class="artigo" onclick="abrirModal('execucaoFiscal')">Ação de Execução Fiscal</li>
+      <li class="artigo" onclick="abrirModal('acaoCautelarFiscal')">Ação Cautelar Fiscal</li>
     </ul>
   </section>
 
-  <section id="relacoes">
-    <h2>Relações entre os Arquivos</h2>
-    <ul>
-      <li>Mandado de Segurança (CF, art. 5º, LXIX; Lei 12.016/09) exige conhecimento da suspensão da exigibilidade (CTN, art. 151, IV) + Petição Inicial (CPC, art. 319)</li>
-      <li>Embargos à Execução (LEF + CPC) relaciona-se com os princípios da legalidade e devido processo legal (CF, art. 5º, II e LIV)</li>
-      <li>Ação Anulatória de Débito Fiscal requer prova do vício e se ancora nos princípios constitucionais tributários (CF, art. 150; CTN, art. 3º e 142)</li>
-    </ul>
-  </section>
-
-  <section id="artigos">
-    <h2>Artigos Completos Selecionados</h2>
-    <div class="artigo" onclick="abrirModal('modal1')"><strong>Art. 5º, LXIX da CF/88:</strong> Clique para ver mais.</div>
-    <div class="artigo" onclick="abrirModal('modal2')"><strong>Art. 38 do CTN:</strong> Clique para ver mais.</div>
-    <div class="artigo" onclick="abrirModal('modal3')"><strong>Art. 151, IV do CTN:</strong> Clique para ver mais.</div>
-    <div class="artigo" onclick="abrirModal('modal4')"><strong>Art. 319 do CPC:</strong> Clique para ver mais.</div>
-  </section>
-
-  <!-- Modais -->
-  <div id="modal1" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modal1')">&times;</span><h3>Art. 5º, LXIX da CF/88</h3><p>Conceder-se-á mandado de segurança para proteger direito líquido e certo, não amparado por habeas corpus ou habeas data, quando o responsável pela ilegalidade ou abuso de poder for autoridade pública ou agente de pessoa jurídica no exercício de atribuições do poder público.</p></div></div>
-  <div id="modal2" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modal2')">&times;</span><h3>Art. 38 do CTN</h3><p>A ação anulatória da exigência fiscal compete ao contribuinte e será proposta contra a pessoa jurídica de direito público que constituiu o crédito tributário, dentro do prazo de 2 (dois) anos, contado da data da notificação da exigência.</p></div></div>
-  <div id="modal3" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modal3')">&times;</span><h3>Art. 151, IV do CTN</h3><p>Suspendem a exigibilidade do crédito tributário: o mandado de segurança.</p></div></div>
-  <div id="modal4" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modal4')">&times;</span><h3>Art. 319 do CPC</h3><p>A petição inicial indicará: o juízo, os nomes e prenomes, o fato e os fundamentos jurídicos do pedido, o pedido, o valor da causa, as provas e a opção por audiência de conciliação.</p></div></div>
-
-<div id="modalMS" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="fecharModal('modalMS')">&times;</span>
-    <h3>Mandado de Segurança</h3>
-    <p><strong>Finalidade:</strong> Proteger direito líquido e certo contra ato ilegal ou abusivo de autoridade pública ou agente de pessoa jurídica no exercício de atribuições do poder público.</p>
-    <p><strong>Cabimento:</strong> CF/88, art. 5º, LXIX; Lei 12.016/2009. O mandado de segurança é ação constitucional com rito especial, cabível para proteger direitos que sejam comprovadamente líquidos e certos, cuja prova se mostre pré-constituída e documental.</p>
-    <p><strong>Art. 5º, LXIX da CF/88 (Comentado):</strong> Estabelece o direito ao mandado de segurança como garantia fundamental. Exige que o direito seja líquido e certo, excluindo hipóteses de habeas corpus ou habeas data. Exige também que o responsável seja uma autoridade pública ou agente que exerça função pública. Essa norma garante controle judicial dos atos estatais.</p>
-    <p><strong>CTN, art. 151, IV (Comentado):</strong> O mandado de segurança, ao ser concedido, suspende a exigibilidade do crédito tributário. Isso significa que a Fazenda Pública não pode cobrar o tributo até que a decisão judicial definitiva seja proferida. Aplica-se amplamente em casos de ilegalidade na constituição do crédito ou aplicação da norma.</p>
-    <p><strong>Lei 12.016/2009 (Comentada):</strong> Dispõe sobre o processo do mandado de segurança individual e coletivo. Estabelece prazos (ex: 120 dias do conhecimento do ato impugnado), partes legítimas, competência, requisitos da inicial, liminar, e regras específicas sobre recurso.</p>
-    <p><strong>Art. 319 do CPC (Comentado):</strong> Regula os requisitos da petição inicial. No caso do MS, exige-se que se indique com clareza o direito violado, o ato coator e a autoridade coatora, com prova documental pré-constituída.</p>
-    <p><strong>Súmulas relevantes:</strong></p>
-    <ul>
-      <li><strong>STF 266:</strong> Não cabe mandado de segurança contra lei em tese.</li>
-      <li><strong>STF 267:</strong> Não cabe mandado de segurança contra os atos judiciais de conteúdo jurisdicional dos quais caiba recurso com efeito suspensivo.</li>
-      <li><strong>STF 268:</strong> Não cabe mandado de segurança contra decisão judicial transitada em julgado.</li>
-      <li><strong>STF 271:</strong> Concessão de MS não tem efeito retroativo, salvo para desconstituir ato ilegal e restabelecer situação anterior.</li>
-      <li><strong>STF 273:</strong> Concessão de liminar em MS não impede o curso normal do processo administrativo fiscal.</li>
-      <li><strong>STF 512:</strong> Extingue-se o processo sem julgamento de mérito se o impetrante não indicar com precisão o ato impugnado ou não juntar prova pré-constituída do alegado direito líquido e certo.</li>
-    </ul>
-    <p><strong>Observação:</strong> O mandado de segurança é peça central no contencioso tributário e frequentemente cobrado na OAB. Dominar seus fundamentos doutrinários e constitucionais é essencial para sua correta aplicação.</p>
-
-    <!-- Conteúdo novo adicionado abaixo -->
-
-    <section id="mandado-seguranca-modelo">
-      <h4>Modelo de Mandado de Segurança – Estrutura e Fundamentos</h4>
-      <ol>
-        <li><strong>Endereçamento</strong><br>
-          Excelentíssimo Senhor Doutor Juiz Federal da ___ Vara Federal da Seção Judiciária de [Cidade]
-        </li>
-        <li><strong>Qualificação das Partes</strong><br>
-          - Impetrante: [Nome completo, qualificação e endereço]<br>
-          - Autoridade Coatora: [Nome, cargo e órgão]
-        </li>
-        <li><strong>Dos Fatos</strong><br>
-          Narração clara dos fatos que ensejam a impetração do mandado de segurança.
-        </li>
-        <li><strong>Do Direito</strong><br>
-          <ul>
-            <li><strong>Fundamentação Constitucional e Legal</strong><br>
-              - Constituição Federal, art. 5º, LXIX e LXX<br>
-              - Lei nº 12.016/2009 (Lei do Mandado de Segurança)
-            </li>
-            <li><strong>Fundamentação Tributária</strong><br>
-              - Código Tributário Nacional (CTN), artigos 142 a 156<br>
-              - Princípios constitucionais tributários (art. 150 da CF)<br>
-              - Súmulas do STF e STJ aplicáveis (ex.: Súmula 262 e Súmula 473 do STF)
-            </li>
-            <li><strong>Pedido de Liminar</strong><br>
-              - Com fundamento no art. 7º, III da Lei 12.016/2009, para suspender o ato coator
-            </li>
-          </ul>
-        </li>
-        <li><strong>Dos Pedidos</strong><br>
-          - Concessão da liminar para suspender o ato coator<br>
-          - Notificação da autoridade coatora<br>
-          - Intimação do Ministério Público<br>
-          - Concessão da segurança ao final<br>
-          - Condenação em custas e demais cominações legais<br>
-          - Protesta por provas
-        </li>
-        <li><strong>Das Provas</strong><br>
-          Protesta-se pela juntada de documentos e demais provas cabíveis.
-        </li>
-        <li><strong>Fechamento</strong><br>
-          Termos em que, pede deferimento.<br>
-          [Cidade], [Data]<br>
-          Assinatura do advogado com OAB
-        </li>
-      </ol>
-
-      <h5>Fundamentos Legais</h5>
+  <div id="acaoAnulatoria" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal('acaoAnulatoria')">&times;</span>
+      <h3>Ação Anulatória</h3>
+      <p><strong>Finalidade:</strong> Anular lançamento tributário indevido.</p>
+      
+      <h4>Fundamentos Legais Detalhados:</h4>
+      
+      <p><strong>CPC, arts. 319–321:</strong></p>
       <ul>
-        <li><strong>Constituição Federal</strong>
-          <ul>
-            <li>Art. 5º, LXIX e LXX (Mandado de Segurança e Direito à Ampla Defesa)</li>
-            <li>Art. 150 (Princípios Tributários: Legalidade, Anterioridade, etc.)</li>
-          </ul>
-        </li>
-        <li><strong>Lei nº 12.016/2009</strong>
-          <ul>
-            <li>Artigos 1º a 10º (Regulamenta o Mandado de Segurança)</li>
-          </ul>
-        </li>
-        <li><strong>Código Tributário Nacional (CTN)</strong>
-          <ul>
-            <li>Artigos 142 a 156 (Lançamento, Crédito Tributário e Extinção)</li>
-          </ul>
-        </li>
-        <li><strong>Súmulas Relevantes</strong>
-          <ul>
-            <li>Súmula 262 do STF (Pagamento antecipado e MS)</li>
-            <li>Súmula 473 do STF (Anulação de atos administrativos)</li>
-          </ul>
-        </li>
+        <li><strong>Art. 319:</strong> Define os requisitos essenciais da petição inicial, tais como identificação do juízo, partes, fundamentos jurídicos, pedido e provas.</li>
+        <li><strong>Art. 320:</strong> Dispõe sobre a necessidade de anexar documentos essenciais ao pedido.</li>
+        <li><strong>Art. 321:</strong> Permite ao juiz exigir que a petição inicial seja emendada ou completada no prazo de 15 dias, sob pena de indeferimento.</li>
       </ul>
-    </section>
 
+      <p><strong>CTN, art. 156, V:</strong> Prevê que o crédito tributário pode ser extinto mediante decisão judicial transitada em julgado que declare sua anulação.</p>
+
+      <p><strong>CTN, art. 165, I:</strong> Garante ao contribuinte o direito de restituir tributo que tenha sido pago indevidamente ou em excesso.</p>
+
+      <p><strong>CTN, art. 169:</strong> Estabelece o prazo prescricional de cinco anos para requerer judicialmente a restituição de tributos pagos indevidamente, contados da data do pagamento.</p>
+
+      <h4>Características Principais:</h4>
+      <p>Essa ação visa contestar a legalidade ou constitucionalidade do lançamento tributário, com o objetivo de anular o débito fiscal e extinguir o crédito tributário indevido.</p>
+
+      <h4>Aplicabilidade:</h4>
+      <p>Utilizada quando há indícios claros de lançamento irregular ou violação constitucional no ato administrativo fiscal.</p>
+    </div>
+  </div>
+
+  <!-- Modal detalhado para Ação Declaratória -->
+<div id="acaoDeclaratoria" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('acaoDeclaratoria')">&times;</span>
+    <h3>Ação Declaratória</h3>
+    <p><strong>Finalidade:</strong> Obter declaração judicial sobre a existência ou inexistência de relação jurídico-tributária.</p>
+
+    <h4>Fundamentos Legais Detalhados:</h4>
+
+    <p><strong>CPC, art. 319:</strong></p>
+    <ul>
+      <li>Determina os elementos necessários para a petição inicial, incluindo juízo competente, partes, fatos, fundamentos jurídicos, pedido e indicação das provas pretendidas.</li>
+    </ul>
+
+    <p><strong>CPC, art. 381:</strong></p>
+    <ul>
+      <li>Dispõe sobre o cabimento da ação declaratória, permitindo ao interessado buscar a declaração judicial para assegurar certeza jurídica e evitar litígios futuros.</li>
+    </ul>
+
+    <h4>Características Principais:</h4>
+    <p>A Ação Declaratória tem natureza preventiva e busca estabelecer certeza jurídica sobre uma obrigação tributária, evitando a cobrança indevida ou conflitos futuros sobre sua incidência.</p>
+
+    <h4>Aplicabilidade:</h4>
+    <p>É especialmente indicada em situações nas quais existe dúvida objetiva sobre a aplicação ou interpretação da norma tributária, impedindo cobranças futuras indevidas ou esclarecendo previamente relações jurídicas tributárias controversas.</p>
   </div>
 </div>
-
-<div id="modalAnulatoria" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalAnulatoria')">&times;</span><h3>Ação Anulatória de Débito Fiscal</h3>
-<p><strong>Finalidade:</strong> Busca o controle judicial de um lançamento tributário ilegal ou inconstitucional, com o objetivo de anular a exigência fiscal.</p>
-<p><strong>Cabimento:</strong> Sempre que o contribuinte entender que o lançamento tributário apresenta vício material ou formal. O prazo prescricional é de 5 anos contados da constituição definitiva do crédito (CTN, art. 174).</p>
-<p><strong>Art. 38 do CTN (Comentado):</strong> Determina que a ação anulatória compete ao sujeito passivo da obrigação tributária (contribuinte ou responsável) e deve ser proposta contra a pessoa jurídica de direito público que realizou o lançamento. A finalidade é desconstituir o crédito tributário. Impõe a necessidade de garantia do juízo para o oferecimento da ação.</p>
-<p><strong>Art. 142 do CTN (Comentado):</strong> Define o lançamento como o procedimento administrativo vinculado que verifica a ocorrência do fato gerador, a natureza e o montante do tributo devido. Caso haja erro nesse processo (por exemplo, em base de cálculo ou competência), o lançamento poderá ser anulado judicialmente.</p>
-<p><strong>Art. 150 da CF/88, incisos I e II (Comentado):</strong> Prevê limitações ao poder de tributar, proibindo a cobrança de tributos sem lei que os institua ou aumente (princípio da legalidade) e com efeito retroativo. A ação anulatória pode ser usada para combater exigências fiscais que desrespeitem esses princípios.</p>
-<p><strong>Outros fundamentos:</strong> CF/88, art. 5º, XXXV (acesso ao Judiciário); princípio da anterioridade (art. 150, III); devido processo legal (art. 5º, LIV).</p>
-<p><strong>Súmulas relevantes:</strong></p>
-<ul>
-  <li><strong>STF 346:</strong> A administração pública pode declarar a nulidade dos seus próprios atos.</li>
-  <li><strong>STF 473:</strong> A administração pode anular seus próprios atos quando eivados de vícios que os tornam ilegais, ou revogá-los por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos.</li>
-  <li><strong>STJ 393:</strong> A exigência de garantia do juízo é necessária para o oferecimento de embargos à execução fiscal, mas também é referência para análise da ação anulatória em sua vinculação com o processo executivo.</li>
-</ul>
-<p><strong>Aplicações práticas:</strong> Anulação de tributo lançado com base em norma inconstitucional, cobrança sem previsão legal, cobrança em desacordo com a base de cálculo correta, prescrição ou decadência do crédito.</p></div></div>
-
-
-
-<div id="modalEmbargos" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalEmbargos')">&times;</span><h3>Embargos à Execução Fiscal</h3>
-<p><strong>Finalidade:</strong> Meio de defesa do executado contra a cobrança judicial da dívida ativa, que visa à desconstituição da Certidão de Dívida Ativa (CDA) que embasa a execução.</p>
-<p><strong>Cabimento:</strong> Após a citação em execução fiscal e desde que garantido o juízo (mediante penhora, depósito judicial ou fiança bancária), conforme o art. 16 da Lei de Execução Fiscal (Lei 6.830/80).</p>
-<p><strong>Art. 16 da LEF (Comentado):</strong> Estabelece o prazo de 30 dias para oferecimento dos embargos após a garantia da execução. Exige que o executado indique as razões pelas quais contesta a cobrança, podendo alegar matéria de fato e de direito. A jurisprudência admite a possibilidade de alegar nulidades da CDA, prescrição, decadência, pagamento, entre outros.</p>
-<p><strong>Arts. 914 a 920 do CPC (Comentados):</strong> Disciplinam os embargos à execução em geral. Apontam os requisitos, procedimentos e matérias que podem ser discutidas. Aplicam-se subsidiariamente à execução fiscal, nos termos do art. 1º da LEF.</p>
-<p><strong>Art. 5º, LIV da CF/88:</strong> Garante o devido processo legal, fundamento constitucional da defesa em execução fiscal.</p>
-<p><strong>CTN – Vinculação:</strong> Art. 202 e seguintes (Certidão da Dívida Ativa); arts. 173 e 174 (decadência e prescrição); art. 156 (hipóteses de extinção do crédito tributário).</p>
-<p><strong>Súmulas relevantes:</strong></p>
-<ul>
-  <li><strong>STF 393:</strong> A garantia do juízo é indispensável para apresentação dos embargos.</li>
-  <li><strong>STJ 112:</strong> O valor da causa nos embargos à execução é o da execução.</li>
-  <li><strong>STJ 392:</strong> A Fazenda Pública pode substituir a CDA nos autos, desde que não altere a causa de pedir ou o valor da dívida.</li>
-</ul>
-<p><strong>Observações:</strong> É a peça mais técnica em sede de execução fiscal. A ausência de garantia do juízo é causa de inadmissibilidade. Por outro lado, se acolhidos os embargos, a execução é extinta ou modificada.</p></div></div>
-
-
-<div id="modalApelacao" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalApelacao')">&times;</span><h3>Recurso de Apelação</h3>
-<p><strong>Finalidade:</strong> O recurso de apelação é o meio adequado para impugnar a sentença proferida pelo juízo de primeira instância, com o objetivo de sua reforma, invalidação, esclarecimento ou integração.</p>
-<p><strong>Fundamentos:</strong> Artigos 1.009 a 1.014 do Código de Processo Civil (CPC/2015); CF/88, art. 5º, inciso XXXV.</p>
-<p><strong>Comentário dos artigos:</strong></p>
-<ul>
-  <li><strong>Art. 1.009:</strong> Da sentença caberá apelação. É o ponto de partida para o cabimento do recurso, sendo imprescindível identificar se houve sentença no caso concreto.</li>
-  <li><strong>Art. 1.010:</strong> Estabelece os requisitos formais da apelação: endereçamento ao juízo ad quem, exposição do fato e do direito, razões do pedido de nova decisão, e pedido de nova decisão. Além disso, trata da atribuição de efeito suspensivo.</li>
-  <li><strong>Art. 1.011:</strong> A apelação será protocolada no juízo de origem, que poderá exercer juízo de retratação ou encaminhar os autos ao tribunal competente.</li>
-  <li><strong>Art. 1.012:</strong> Regra geral: efeito suspensivo da apelação. Exceções: sentenças que versam sobre tutelas provisórias, alimentos, entre outras.</li>
-  <li><strong>Art. 1.013:</strong> Estabelece o efeito devolutivo: devolve ao tribunal o conhecimento da matéria impugnada e, em algumas hipóteses, também de matéria não impugnada. Trata da extensão do reexame.</li>
-  <li><strong>Art. 1.014:</strong> Prevê a possibilidade de complementação do recurso no caso de interposição parcial, vedando inovação recursal de matéria não debatida anteriormente.</li>
-</ul>
-<p><strong>Fundamento constitucional:</strong> CF/88, art. 5º, XXXV - a lei não excluirá da apreciação do Poder Judiciário lesão ou ameaça a direito. A apelação está garantida como forma de revisar os atos do Estado-juiz.</p>
-<p><strong>Súmulas relevantes:</strong></p>
-<ul>
-  <li><strong>STJ 7:</strong> A pretensão de simples reexame de prova não enseja recurso especial.</li>
-  <li><strong>STJ 211:</strong> Inadmissível recurso especial quanto à matéria não apreciada pelo tribunal de origem.</li>
-</ul>
-<p><strong>Aplicação tributária:</strong> Utilizada para reformar sentenças de improcedência ou procedência em ações de mandado de segurança, anulatória, declaratória ou consignação em pagamento. Também viabiliza o reexame das decisões proferidas em embargos à execução fiscal.</p>
-<p><strong>Observação:</strong> A apelação é essencial para a garantia da ampla defesa e contraditório. O domínio técnico dos artigos 1.009 a 1.014 é exigido tanto na prática quanto nas provas da OAB.</p></div></div>
-
-
-<div id="modalAgravo" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalAgravo')">&times;</span><h3>Agravo de Instrumento</h3>
-<p><strong>Finalidade:</strong> Visa à impugnação imediata de decisões interlocutórias nos casos expressamente previstos em lei, quando não for possível aguardar o julgamento final.</p>
-<p><strong>Fundamentos:</strong> Art. 1.015 do CPC/2015 e incisos.</p>
-<p><strong>Comentário do art. 1.015 do CPC:</strong> Estabelece um rol taxativo de hipóteses em que cabe o agravo de instrumento, como decisões sobre tutela provisória, mérito do processo, rejeição da alegação de convenção de arbitragem, competência, entre outras. A jurisprudência tem admitido interpretações extensivas em algumas situações excepcionais.</p>
-<p><strong>Relação com o Direito Tributário:</strong> Amplamente utilizado para impugnar decisões que concedem ou negam tutela provisória para suspender exigibilidade de crédito tributário ou autorizar compensação.</p>
-<p><strong>Fundamento Constitucional:</strong> CF/88, art. 5º, incisos XXXV (acesso à justiça), LIV (devido processo legal) e LV (contraditório e ampla defesa).</p>
-<p><strong>Súmula relevante:</strong></p>
-<ul>
-  <li><strong>STJ 182:</strong> É inviável o recurso especial quando ausente o prequestionamento da matéria recorrida.</li>
-</ul>
-<p><strong>Observação:</strong> A correta identificação das hipóteses de cabimento é essencial. O agravo de instrumento é fundamental para garantir a efetividade da jurisdição em matéria tributária, especialmente quando se pretende afastar exigibilidade de crédito tributário de imediato.</p></div></div></div>
-
-<div id="modalExcecao" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalExcecao')">&times;</span><h3>Exceção de Pré-Executividade</h3>
-<p><strong>Finalidade:</strong> Permitir ao executado impugnar a execução fiscal sem necessidade de garantir o juízo, mediante petição nos próprios autos.</p>
-<p><strong>Natureza:</strong> Defesa autônoma de natureza incidental. Criada pela jurisprudência com base em princípios constitucionais.</p>
-<p><strong>Fundamentos:</strong> Princípios do devido processo legal (CF, art. 5º, LIV), legalidade (art. 150, I), inafastabilidade do controle jurisdicional (art. 5º, XXXV).</p>
-<p><strong>Hipóteses cabíveis:</strong> Ilegitimidade de parte, prescrição, decadência, ausência de certeza e liquidez da CDA, erro de fato, nulidade do título, entre outros.</p>
-<p><strong>Jurisprudência consolidada:</strong> Reafirma sua admissibilidade para matérias que independam de dilação probatória. Exige prova documental inequívoca.</p>
-<p><strong>Súmulas:</strong></p>
-<ul>
-  <li><strong>STJ 393:</strong> A exigência de garantia do juízo não se aplica à exceção de pré-executividade para matérias de ordem pública com prova pré-constituída.</li>
-</ul>
-<p><strong>Observação:</strong> Trata-se de um instrumento poderoso na defesa do contribuinte em execuções fiscais, quando o crédito tributário é manifestamente inexigível.</p></div></div></div>
-
-<div id="modalDeclaratoria" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalDeclaratoria')">&times;</span><h3>Ação Declaratória</h3>
-<p><strong>Finalidade:</strong> Obter declaração judicial sobre a existência, inexistência ou modo de ser de uma relação jurídica tributária.</p>
-<p><strong>Fundamentos:</strong> CPC, art. 19; CF/88, art. 5º, XXXV.</p>
-<p><strong>Comentário do art. 19 do CPC:</strong> A ação declaratória é cabível sempre que o autor tiver interesse jurídico em ver reconhecida a existência ou inexistência de relação jurídica, ou autenticidade/falsidade de documento.</p>
-<p><strong>Aplicação tributária:</strong> Muito utilizada para declarar inexistência de obrigação tributária em relação a determinado tributo ou situação fática. Exemplo: questionamento sobre incidência de imposto em determinada operação.</p>
-<p><strong>Fundamento constitucional:</strong> CF/88, art. 5º, XXXV - assegura o controle judicial de qualquer lesão ou ameaça a direito.</p>
-<p><strong>Observação:</strong> A ação declaratória permite afastar a exigência fiscal futura sem necessidade de pagamento prévio, desde que o contribuinte tenha interesse processual concreto e imediato.</p></div></div></div>
-
-<div id="modalConsignacao" class="modal"><div class="modal-content"><span class="close" onclick="fecharModal('modalConsignacao')">&times;</span><h3>Ação de Consignação em Pagamento</h3>
-<p><strong>Finalidade:</strong> Permite ao contribuinte efetuar pagamento de tributo nos casos em que há dúvida sobre quem é o credor, recusa de recebimento ou exigência de valor superior ao devido.</p>
-<p><strong>Fundamentos:</strong> CPC, arts. 539 a 546; CTN, art. 164; CF/88, art. 5º, XXXV.</p>
-<p><strong>Comentário do art. 164 do CTN:</strong> Quando a Fazenda recusa o recebimento do tributo, o sujeito passivo pode efetuar o depósito judicial, como forma de extinguir a obrigação tributária. Tal medida evita multa e juros, e impede a constituição de crédito tributário ilegal.</p>
-<p><strong>Comentário dos arts. 539 a 546 do CPC:</strong> Regulam a ação consignatória. Devem ser indicadas as causas da consignação (recusa, dúvida, litispendência etc.), juntada do valor ou prova de depósito judicial e prova da tentativa de pagamento.</p>
-<p><strong>Hipóteses de cabimento:</strong>
-<ul>
-  <li>Recusa da Fazenda em receber tributo.</li>
-  <li>Divergência sobre o valor devido (ex: base de cálculo incorreta).</li>
-  <li>Dúvida sobre quem seja o titular do crédito tributário (ex: litígio federativo).</li>
-</ul></p>
-<p><strong>Observação:</strong> A ação de consignação é relevante em contextos de interpretação controvertida da legislação tributária ou exigências incompatíveis com o sistema constitucional tributário.</p></div></div></div>
-
-
   
   <footer>
     <p>&copy; 2025 - Site de apoio para a 2ª Fase OAB - Direito Tributário</p>
