@@ -59,6 +59,15 @@
   </ul>
 </section>
 
+  <section id="contrarrazoes">
+  <h2>4. Contrarrazões Recursais</h2>
+  <ul>
+    <li class="artigo" onclick="abrirModal('contrarrazoesApelacao')">Contrarrazões à Apelação</li>
+    <li class="artigo" onclick="abrirModal('contrarrazoesAgravoInst')">Contrarrazões ao Agravo de Instrumento</li>
+    <li class="artigo" onclick="abrirModal('contrarrazoesReExEsp')">Contrarrazões ao Recurso Especial/Extraordinário</li>
+  </ul>
+</section>
+
  <!-- Modal detalhado com modelo para Ação Anulatória -->
 <div id="acaoAnulatoria" class="modal">
   <div class="modal-content">
@@ -773,6 +782,112 @@
     </ul>
   </div>
 </div>
+
+  <div id="contrarrazoesApelacao" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('contrarrazoesApelacao')">&times;</span>
+    <h3>Contrarrazões à Apelação – Modelo Completo</h3>
+
+    <p><strong>Finalidade:</strong> Defender a manutenção da sentença favorável, rebatendo os argumentos da parte apelante.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Prazo de 15 dias úteis:</strong> Contado da intimação para apresentar contrarrazões.<br><em>Art. 1.003, §5º, c/c art. 1.010, §1º, CPC</em></li>
+      <li><strong>Efeito devolutivo limitado:</strong> Somente os pontos impugnados pelo apelante serão examinados.<br><em>Art. 1.013, CPC</em></li>
+      <li><strong>Possibilidade de pedido contraposto:</strong> Adesivo ou reforma parcial.<br><em>Art. 997, §1º, CPC</em></li>
+      <li><strong>Estabiliza fundamentos não impugnados:</strong> Sentença se mantém nesses pontos.<br><em>Súmula 182, STJ</em></li>
+      <li><strong>Não há preparo nem custas adicionais.</strong></li>
+    </ul>
+
+    <h4>Estrutura &amp; Fundamentos:</h4>
+    <ol>
+      <li>Endereçamento ao tribunal.</li>
+      <li>Preliminar de admissibilidade.</li>
+      <li>Mérito: refutar argumentos da apelação.</li>
+      <li>Pedidos:
+        <ul>
+          <li>Manter sentença – <em>art. 1.010, §3º, CPC</em></li>
+          <li>Majorar honorários em grau recursal – <em>art. 85, §11, CPC</em></li>
+        </ul>
+      </li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul><li><strong>Súmula 182, STJ:</strong> É inviável conhecer recurso que não impugna especificamente os fundamentos da decisão.</li></ul>
+  </div>
+</div>
+
+<!-- Modal – Contrarrazões ao Agravo de Instrumento -->
+<div id="contrarrazoesAgravoInst" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('contrarrazoesAgravoInst')">&times;</span>
+    <h3>Contrarrazões ao Agravo de Instrumento – Modelo Completo</h3>
+
+    <p><strong>Finalidade:</strong> Rebater fundamentos do agravo de instrumento e defender a manutenção da decisão interlocutória.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Prazo de 15 dias úteis para resposta:</strong><br><em>Art. 1.019, II, CPC</em></li>
+      <li><strong>Contrarrazões apresentadas no tribunal:</strong> Endereçadas ao relator.</li>
+      <li><strong>Pode requerer multa por litigância de má-fé:</strong> <em>Art. 80, CPC</em></li>
+      <li><strong>Pedido de mantença e eventual majoração de honorários.</strong></li>
+    </ul>
+
+    <h4>Estrutura &amp; Pedidos:</h4>
+    <ol>
+      <li>Endereçamento ao relator.</li>
+      <li>Tempestividade.</li>
+      <li>Mérito: refutar cada argumento do agravo.</li>
+      <li>Pedidos:
+        <ul>
+          <li>Negar provimento – <em>art. 932, IV, CPC</em></li>
+          <li>Majorar honorários – <em>art. 85, §11, CPC</em></li>
+        </ul>
+      </li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul><li><strong>Súmula 597, STJ:</strong> Falta de peça obrigatória pode ser suprida.</li></ul>
+  </div>
+</div>
+
+<!-- Modal – Contrarrazões ao Recurso Especial / Extraordinário -->
+<div id="contrarrazoesReExEsp" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('contrarrazoesReExEsp')">&times;</span>
+    <h3>Contrarrazões ao Recurso Especial / Extraordinário – Modelo Completo</h3>
+
+    <p><strong>Finalidade:</strong> Defender a manutenção do acórdão recorrido contra alegações de violação de lei federal (REsp) ou constitucional (RE).</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Prazo de 15 dias úteis.</strong><br><em>Art. 1.030, §2º, CPC</em></li>
+      <li><strong>Manifestação no tribunal de origem:</strong> Juízo de admissibilidade prévio.</li>
+      <li><strong>Pode suscitar ausência de prequestionamento:</strong> <em>Súmula 282, STF; Súmula 211, STJ</em></li>
+      <li><strong>Requerer inaplicabilidade de repercussão geral ou divergência.</strong></li>
+    </ul>
+
+    <h4>Estrutura &amp; Pedidos:</h4>
+    <ol>
+      <li>Endereçamento ao presidente do tribunal de origem.</li>
+      <li>Impugnação tempestiva.</li>
+      <li>Mérito: refutar violação constitucional/federal.</li>
+      <li>Pedidos:
+        <ul>
+          <li>Negar seguimento ou inadmitir recurso – <em>art. 1.030, I, CPC</em></li>
+          <li>Majorar honorários recursais – <em>art. 85, §11, CPC</em></li>
+        </ul>
+      </li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul>
+      <li><strong>Súmula 282, STF:</strong> Ausência de prequestionamento.</li>
+      <li><strong>Súmula 211, STJ:</strong> Necessidade de prequestionamento explícito.</li>
+    </ul>
+  </div>
+</div>
+
   
   <footer>
     <p>&copy; 2025 - Site de apoio para a 2ª Fase OAB - Direito Tributário</p>
