@@ -47,6 +47,18 @@
     </ul>
   </section>
 
+  <section id="recursos">
+  <h2>3. Recursos</h2>
+  <ul>
+    <li class="artigo" onclick="abrirModal('apelacao')">Recurso de Apelação</li>
+    <li class="artigo" onclick="abrirModal('agravoInstrumento')">Agravo de Instrumento</li>
+    <li class="artigo" onclick="abrirModal('embargosDeclaracao')">Embargos de Declaração</li>
+    <li class="artigo" onclick="abrirModal('recursoOrdinario')">Recurso Ordinário Constitucional</li>
+    <li class="artigo" onclick="abrirModal('agravoInterno')">Agravo Interno</li>
+    <li class="artigo" onclick="abrirModal('recursoExEsp')">Recurso Especial / Extraordinário</li>
+  </ul>
+</section>
+
  <!-- Modal detalhado com modelo para Ação Anulatória -->
 <div id="acaoAnulatoria" class="modal">
   <div class="modal-content">
@@ -596,6 +608,171 @@
   </div>
 </div>
 
+  <div id="apelacao" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('apelacao')">&times;</span>
+    <h3>Recurso de Apelação – Modelo Completo</h3>
+    <p><strong>Finalidade:</strong> Impugnar sentença (decisão final) proferida em 1ª instância para reformá-la, anulá-la ou integrá-la.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Efeito devolutivo amplo:</strong> Devolve ao tribunal todo o mérito contestado.<br><em>Art. 1.013, CPC</em></li>
+      <li><strong>Prazo de 15 dias úteis:</strong><br><em>Art. 1.003, §5º, CPC</em></li>
+      <li><strong>Efeito suspensivo automático:</strong> Regra geral suspende a eficácia da sentença.<br><em>Art. 1.012, CPC</em></li>
+      <li><strong>Cabimento contra decisão final de mérito ou terminativa.</strong><br><em>Art. 1.009, CPC</em></li>
+      <li><strong>Possibilidade de julgamento pelo art. 1.013, §1º (causa madura).</strong></li>
+    </ul>
+
+    <h4>Estrutura da Peça:</h4>
+    <ol>
+      <li>Endereçamento: tribunal competente.</li>
+      <li>Qualificação das partes.</li>
+      <li>Tempestividade e preparo.</li>
+      <li>Exposição dos fatos e fundamentos.</li>
+      <li>Pedidos:
+        <ul>
+          <li>Reforma/anulação da sentença – <em>art. 1.013, CPC</em></li>
+          <li>Efeito suspensivo – <em>art. 1.012, CPC</em></li>
+        </ul>
+      </li>
+      <li>Provas e fechamento.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul>
+      <li><strong>Súmula 7, STJ:</strong> Vedada revaloração de prova em REsp.</li>
+    </ul>
+  </div>
+</div>
+
+  <div id="agravoInstrumento" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('agravoInstrumento')">&times;</span>
+    <h3>Agravo de Instrumento – Modelo Completo</h3>
+    <p><strong>Finalidade:</strong> Impugnar decisões interlocutórias taxativamente previstas no art. 1.015 do CPC.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Prazo de 15 dias úteis.</strong><br><em>Art. 1.003, §5º, CPC</em></li>
+      <li><strong>Instrumentalidade:</strong> Deve ser instruído com peças obrigatórias.<br><em>Art. 1.017, CPC</em></li>
+      <li><strong>Efeito suspensivo não automático:</strong> Relator pode conceder.<br><em>Art. 1.019, I, CPC</em></li>
+      <li><strong>Possibilidade de agravo interno contra decisão monocrática.</strong></li>
+      <li><strong>Cabimento restrito aos incisos do art. 1.015.</strong></li>
+    </ul>
+
+    <h4>Estrutura da Peça &amp; Pedidos:</h4>
+    <ol>
+      <li>Endereçamento ao tribunal.</li>
+      <li>Peças obrigatórias (decisão agravada, procurações).</li>
+      <li>Pedido de efeito suspensivo – <em>art. 1.019, I</em></li>
+      <li>Mérito: reforma da interlocutória.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul><li><strong>Súmula 597, STJ:</strong> Ausência de peça obrigatória não gera nulidade se suprida.</li></ul>
+  </div>
+</div>
+
+  <div id="embargosDeclaracao" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('embargosDeclaracao')">&times;</span>
+    <h3>Embargos de Declaração – Modelo Completo</h3>
+    <p><strong>Finalidade:</strong> Sanar obscuridade, contradição, omissão ou erro material em qualquer decisão judicial.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Prazo de 5 dias úteis.</strong><br><em>Art. 1.023, CPC</em></li>
+      <li><strong>Efeito interruptivo dos demais prazos recursais.</strong><br><em>Art. 1.026, §3º</em></li>
+      <li><strong>Possibilidade de efeito modificativo.</strong><br><em>Art. 1.024, §2º</em></li>
+      <li><strong>Cabimento em qualquer decisão judicial.</strong></li>
+    </ul>
+
+    <h4>Estrutura &amp; Pedidos:</h4>
+    <ol>
+      <li>Endereçamento ao juízo prolator.</li>
+      <li>Indicação do vício (omissão etc.).</li>
+      <li>Pedido de esclarecimento/integração.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul><li><strong>Súmula 98, STJ:</strong> Embargos de declaração não têm efeito suspensivo.</li></ul>
+  </div>
+</div>
+
+  <div id="recursoOrdinario" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('recursoOrdinario')">&times;</span>
+    <h3>Recurso Ordinário Constitucional – Modelo Completo</h3>
+    <p><strong>Finalidade:</strong> Levar ao STF ou STJ decisões denegatórias em MS, HC, HD ou MI em única instância.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Prazo de 15 dias.</strong><br><em>Art. timing CF c/c RISTF/RISTJ</em></li>
+      <li><strong>Competência:</strong> STF (art. 102, II) ou STJ (art. 105, II).</li>
+      <li><strong>Efeito devolutivo.</strong></li>
+    </ul>
+
+    <h4>Estrutura &amp; Pedidos:</h4>
+    <ol>
+      <li>Endereçamento ao tribunal superior competente.</li>
+      <li>Peças essenciais e procurações.</li>
+      <li>Reforma da decisão denegatória.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul><li><strong>Súmula 624, STF:</strong> Não cabe RO contra decisão em agravo regimental.</li></ul>
+  </div>
+</div>
+
+  <div id="agravoInterno" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('agravoInterno')">&times;</span>
+    <h3>Agravo Interno – Modelo Completo</h3>
+    <p><strong>Finalidade:</strong> Levar à turma/colegiado a revisão de decisão monocrática do relator.</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Prazo de 15 dias.</strong><br><em>Art. 1.021, §1º, CPC</em></li>
+      <li><strong>Decisão colegiada.</strong></li>
+      <li><strong>Pode acarretar majoração de honorários se infundado.</strong><br><em>Art. 1.021, §4º</em></li>
+    </ul>
+
+    <h4>Estrutura &amp; Pedidos:</h4>
+    <ol>
+      <li>Endereçamento ao relator.</li>
+      <li>Fundamentos contra decisão monocrática.</li>
+    </ol>
+  </div>
+</div>
+
+  <div id="recursoExEsp" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal('recursoExEsp')">&times;</span>
+    <h3>Recurso Especial / Extraordinário – Modelo Completo</h3>
+    <p><strong>Finalidade:</strong> Impugnar acórdão que violou lei federal (REsp ao STJ) ou Constituição (RE ao STF).</p>
+
+    <h4>Características Principais:</h4>
+    <ul>
+      <li><strong>Repercussão geral (RE) ou demonstração de divergência/jurisprudência (REsp).</strong></li>
+      <li><strong>Prazo de 15 dias.</strong></li>
+      <li><strong>Juízo de admissibilidade no tribunal de origem.</strong><br><em>Art. 1.030, CPC</em></li>
+      <li><strong>Falta de prequestionamento inviabiliza.</strong><br><em>Súmula 282, STF; Súmula 211, STJ</em></li>
+    </ul>
+
+    <h4>Estrutura &amp; Pedidos:</h4>
+    <ol>
+      <li>Endereçamento ao presidente do tribunal de origem.</li>
+      <li>Demonstrativo de violação (REsp) ou repercussão geral (RE).</li>
+      <li>Pedido de reforma/anulação do acórdão recorrido.</li>
+    </ol>
+
+    <h4>Súmulas Relevantes:</h4>
+    <ul>
+      <li><strong>Súmula 7, STJ:</strong> Vedada reanálise de prova.</li>
+      <li><strong>Súmula 283/284, STF:</strong> Falta de impugnação específica/PQ.</li>
+    </ul>
+  </div>
+</div>
   
   <footer>
     <p>&copy; 2025 - Site de apoio para a 2ª Fase OAB - Direito Tributário</p>
